@@ -1,0 +1,15 @@
+<!-- UserMapper.xml -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 對應的Repository interface-->
+<mapper namespace="org.fenrir.mybatis.infra.mysql.User2Repository">
+
+    <!-- 定義一個簡單的查詢 -->
+    <select id="getAll">
+        SELECT *
+        FROM game_main.user_list
+        WHERE id = #{id}
+    </select>
+
+</mapper>
