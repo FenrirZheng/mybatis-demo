@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     url: 'jdbc:mysql://127.0.0.1:13307'
@@ -7,3 +6,10 @@ spring:
 mybatis:
   config-location: 'classpath:mybatis/mybatis-config.xml'
   mapper-locations: 'classpath:mybatis/mapper/*.xml'
+
+org:
+  fenrir:
+    mybatis:
+      demo:
+        simple: false #最簡的simple code demo
+        page-select: true # demo for page select (分頁查詢)
